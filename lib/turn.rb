@@ -1,6 +1,6 @@
 def turn(board)
-  # Note: This is the loop method for #turn.
-  # See the TicTacToe.rb lab for the more elegant recursion method for #turn.
+  # Note: This is the loop version of #turn.
+  # See the TicTacToe.rb lab for the more elegant recursion version of #turn.
   
   move_is_valid = false 
   
