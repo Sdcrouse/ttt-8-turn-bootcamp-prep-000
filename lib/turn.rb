@@ -6,10 +6,14 @@ def turn(board)
     input = gets.strip
     index = input_to_index(input)
     
-    
+    if valid_move?(board, index)
+      move_is_valid = true
+    else
+      
+    end
   end
   
-  if valid_move?(board, index) == true
+  
     move(board, index)
     display_board(board)
   else
