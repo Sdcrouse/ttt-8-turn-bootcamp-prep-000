@@ -1,7 +1,13 @@
 def turn(board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
+  move_is_valid = false 
+  
+  until move_is_valid
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    
+    
+  end
   
   if valid_move?(board, index) == true
     move(board, index)
