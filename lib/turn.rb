@@ -1,4 +1,6 @@
 def turn(board)
+  # Note: This is the loop method for #turn.
+  # 
   move_is_valid = false 
   
   until move_is_valid
@@ -6,7 +8,7 @@ def turn(board)
     input = gets.strip
     index = input_to_index(input)
     
-    if valid_move?(board, index)
+    if valid_move?(board, index) == true
       move_is_valid = true
     else
       puts "Sorry. Invalid move. Try again."
