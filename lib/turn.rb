@@ -9,17 +9,12 @@ def turn(board)
     if valid_move?(board, index)
       move_is_valid = true
     else
-      
+      puts "Sorry. Invalid move. Try again."
     end
   end
   
-  
-    move(board, index)
-    display_board(board)
-  else
-    puts "Sorry. Invalid move. Try again."
-    turn(board)
-  end
+  move(board, index)
+  display_board(board)
 end
 
 def display_board(board)
