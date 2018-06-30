@@ -12,7 +12,6 @@ def turn(board)
       puts "Sorry. Invalid move. Try again."
     end
   end
-  
   move(board, index)
   display_board(board)
 end
